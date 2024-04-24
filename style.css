@@ -8,8 +8,22 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --third-color: #839fb4;
+    --fourth-color: #177ce5;
+}
+
+.dark-theme{
+    --primary-color: #fff;
+    --secondary-color: #000;
+    --third-color: #000111;
+    --fourth-color: #fff;
+}
+
 body{
-    background: #839fb4;
+    background: var(--third-color);
 }
 
 .quote-box{
@@ -17,25 +31,33 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: #fff;
+    background: var(--secondary-color);
     width: 700px;
     text-align: center;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 10px 20px 0px rgba(0,0,0,0.15);
+    border: .5px #505050 solid;
 }
 
 .quote-box h2{
     font-size: 32px;
     margin-bottom: 40px;
     position: relative;
+    color: var(--primary-color);
+}
+
+#icon{
+    float: right;
+    cursor: pointer;
+    color: var(--primary-color);
 }
 
 .quote-box h2::after{
     content: '';
     width: 75px;
     height: 3px;
-    background: rgb(23,124,229);
+    background: var(--fourth-color);
     border-radius: 3px;
     position: absolute;
     bottom: -10px;
@@ -47,6 +69,7 @@ body{
     font-size: 26px;
     min-height: 110px;
     font-weight: 500;
+    color: var(--primary-color);
 }
 
 .quote-box blockquote::before, .quote-box blockquote::after{
@@ -58,6 +81,7 @@ body{
     margin-top: 10px;
     float: right;
     position: relative;
+    color: var(--primary-color);
 }
 
 .quote-box span::before{
@@ -65,7 +89,7 @@ body{
     width: 20px;
     height: 2px;
     border-radius: 3px;
-    background-color: rgb(23,124,229);
+    background-color: var(--fourth-color);
     position: absolute;
     top: 50%;
     left: -30px;
@@ -91,21 +115,21 @@ button{
 }
 
 .quote-btn{
-    background-color: rgb(23,124,229);
-    color: #fff;
+    background-color: var(--fourth-color);
     border: none;
+    color: var(--secondary-color);
 }
 
 .tweet-btn{
-    background-color: #fff;
-    color: #222;
-    border: 1px solid rgb(23,124,229);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--fourth-color);
 }
 
 .tweet-btn i {
     font-size: 16px;
     margin-right: 5px;
-    color: rgb(23,124,229);
+    color: var(--fourth-color);
 }
 
 
