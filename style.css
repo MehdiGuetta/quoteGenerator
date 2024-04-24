@@ -12,14 +12,12 @@
     --primary-color: #000;
     --secondary-color: #fff;
     --third-color: #839fb4;
-    --fourth-color: #177ce5;
 }
 
 .dark-theme{
     --primary-color: #fff;
     --secondary-color: #000;
     --third-color: #000111;
-    --fourth-color: #fff;
 }
 
 body{
@@ -57,7 +55,7 @@ body{
     content: '';
     width: 75px;
     height: 3px;
-    background: var(--fourth-color);
+    background: #177ce5;
     border-radius: 3px;
     position: absolute;
     bottom: -10px;
@@ -89,7 +87,7 @@ body{
     width: 20px;
     height: 2px;
     border-radius: 3px;
-    background-color: var(--fourth-color);
+    background-color: #177ce5;
     position: absolute;
     top: 50%;
     left: -30px;
@@ -115,21 +113,21 @@ button{
 }
 
 .quote-btn{
-    background-color: var(--fourth-color);
+    background-color: #177ce5;
     border: none;
-    color: var(--secondary-color);
+    color: #fff;
 }
 
 .tweet-btn{
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    border: 1px solid var(--fourth-color);
+    border: 1px solid #177ce5;
 }
 
 .tweet-btn i {
     font-size: 16px;
     margin-right: 5px;
-    color: var(--fourth-color);
+    color: #177ce5;
 }
 
 
