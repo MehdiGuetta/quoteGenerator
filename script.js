@@ -2,6 +2,7 @@ const api_url = 'https://api.quotable.io/random';
 const quote = document.getElementById('quote');
 const author = document.getElementById('author');
 const newBtn = document.querySelector('.quote-btn');
+let icon = document.getElementById('icon');
 
 async function getQuote(url){
     const response = await fetch(url);
@@ -17,4 +18,8 @@ getQuote(api_url);
 
 function tweet(){
     window.open("https://twitter.com/intent/tweet?text=" + quote.innerHTML + ' --by ' + author.innerHTML, 'Tweet Window', 'width=600, height=300')
+}
+
+icon.onclick = function(){
+    document.body.classList.toggle('dark-theme');
 }
